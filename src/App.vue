@@ -2,9 +2,7 @@
   <h1>{{ title }}</h1>
   <ul id="todolist">
     <li v-for="(item, index) in todos" :key="item">
-      <button class="btn" @click="handleDelete(index)">
-        <i class="fa fa-trash"></i>
-      </button>
+      <button class="btn" @click="handleDelete(index)">X</button>
       {{ item }}
     </li>
   </ul>
